@@ -10,3 +10,6 @@ class IsAdminOrSelf(permissions.BasePermission):
         if request.user.is_staff:  
             return True
         return obj == request.user 
+    
+
+    
